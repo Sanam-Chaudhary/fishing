@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gone Fishing!</h1>
+    </header>
+
+    <main>
+        <section id="game-area">
+            <h2>Game Area</h2>
+            <div id="fishing-canvas">
+                <div id="pond"></div>
+                <video id="fishing-video" width="600" height="200" preload="auto" muted>
+                    <source src="When Catching Fish🐟😨(Animation meme).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <button id="catch-fish">Catch Fish</button>
+        </section>
+
+        <section id="score-display">
+            <h2>Score: <span id="score">0</span></h2>
+        </section>
+
+        <section id="caught-fish-log">
+            <h2>Caught Fish</h2>
+            <ul id="fish-log">
+                <!-- Caught fish will be listed here -->
+            </ul>
+        </section>
+        
+        <section id="fish-book">
+            <h2>Fish Book</h2>
+            <div id="book">
+                <div class="page" id="page-1">
+                    <img src="front.jpg" alt="Front" class="fish" data-fish="Front">
+                </div>
+                <div class="page" id="page-2">
+                    <img src="Trout.jpg" alt="Trout" class="fish blurry" data-fish="Trout">
+                </div>
+                <div class="page" id="page-3">
+                    <img src="salmon.webp" alt="Salmon" class="fish blurry" data-fish="Salmon">
+                </div>
+                <div class="page" id="page-4">
+                    <img src="bass.jpg" alt="Bass" class="fish blurry" data-fish="Bass">
+                </div>
+                <div class="page" id="page-5">
+                    <img src="catfish.jpg" alt="Catfish" class="fish blurry" data-fish="Catfish">
+                </div>
+                <div class="page" id="page-6">
+                    <img src="tuna.webp" alt="Tuna" class="fish blurry" data-fish="Tuna">
+                </div>
+                <div class="page" id="page-7">
+                    <img src="end.png" alt="End" class="fish " data-fish="End">
+                </div>
+            </div>
+            <button id="prev-page">Previous</button>
+            <button id="next-page">Next</button>
+        </section>
+    </main>
+
+    <audio id="background-audio" src="background-music.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
