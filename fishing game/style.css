@@ -1,0 +1,111 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styles */
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333; /* Dark text color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #00796b; /* Teal background */
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Main section styles */
+main {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Game area styles */
+#game-area {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Video styles */
+#fishing-video {
+    display: none; /* Hide the video initially */
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Score display styles */
+#score-display {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Caught fish log styles */
+#caught-fish-log {
+    margin-top: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #4caf50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+    margin: 5px;
+}
+
+button:disabled {
+    background-color: #ccc; /* Grey background when disabled */
+    cursor: not-allowed;
+}
+
+/* Fish book styles */
+#fish-book {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#book {
+    width: 100%;
+    height: 300px; /* Height for the book */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #00796b; /* Border for the book */
+    border-radius: 10px;
+    background-color: white; /* Background for the book */
+}
+
+.page {
+    display: none; /* Hide all pages initially */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.page img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+.blurry {
+    filter: blur(5px); /* Apply blur effect */
+}
+
+/* Show the first page by default */
+#page-1 {
+    display: flex; /* Show the first page */
+}
