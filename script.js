@@ -1,6 +1,6 @@
 // Initialize variables
 let score = 0;
-const fishTypes = ['Front','Trout', 'Salmon', 'Bass', 'Catfish', 'Tuna','End'];
+const fishTypes = ['Trout', 'Salmon', 'Bass', 'Catfish', 'Tuna'];
 const fishLog = [];
 let currentPage = 0; // Track the current page in the fish book
 const totalPages = fishTypes.length; // Total number of fish pages
